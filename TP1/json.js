@@ -22,8 +22,8 @@ const personaje = {
     "created": "2017-12-27T18:47:44.566Z"
 }
 
-document.getElementById("result").innerHTML=personaje.name;
-
+document.getElementById("pers-name").innerHTML=personaje.name;
+document.getElementById("pers-stat").innerHTML=personaje.status;
 
 
 
