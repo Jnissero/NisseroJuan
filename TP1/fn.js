@@ -1,16 +1,16 @@
-let frutas = ['pera', 'manzana', 'frutilla', 'banana', 'kiwi'];
+function buscar() {
+    let valor = document.getElementById("number").value;
 
+    fetch('https://rickandmortyapi.com/api/character/' + value)
+        .then(response => response.json())
+        .then(data => {
+            console.log('El genero es: ', data.gender);
 
-/*console.log($array[1]);
-*/
+            document.getElementById('valor').innerHTML = ''
+        })
+        .catch(
+            error => {
+                console.error('Error: ', error);
+            });
 
-/*frutas.forEach( fruta => {
-console.log(fruta);
-})*/
-
-for (const fruta of frutas) {
-    if (fruta == 'manzana')
-        console.log(fruta)
 }
-
-
