@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css" />
+  <title>Buscador de personajes de Rick and Morty</title>
+</head>
+
+<body>
+  <h1>Buscador de personajes de Bick and Borty</h1>
+  <form id="formulario">
+    <div class="box-inputs">
+      <label for="id1">ID del primer personaje:</label>
+      <input type="number" id="id1" name="id1" min="1">
+      <label for="id2">ID del segundo personaje:</label>
+      <input type="number" id="id2" name="id2" min="1">
+    </div>
+    <button type="submit">Buscar</button>
+  </form>
+
+  <div id="resultados" class="resultados"></div>
+
+  <script src="fn.js"></script>
+</body>
+
+</html>
