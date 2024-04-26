@@ -1,9 +1,8 @@
 
-
-
-
 function searchUser() {
+
     const urlrandomuser = "https://randomuser.me/api/";
+
     fetch(urlrandomuser)
         .then(response => response.json())
         .then(data => {
@@ -22,20 +21,25 @@ function searchUser() {
         `;
 
             container = L.DomUtil.get('map');
-                if (container != null){
-                    container._leaflet_id=null;
-                }
+            if (container != null) {
+                container._leaflet_id = null;
+            }
 
-        
-            let map = L.map('map').setView([longitud, latitud, 13])
+
+            const map = L.map('map').setView([latitud, longitud], 3)
             L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 maxZoom: 19,
                 attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
             }).addTo(map);
-            
+
+            var marker = L.marker([latitud, longitud]).addTo(map);
 
         })
-}
+
+        .catch(error => console.log(error)); 
+            document.getElementById("error").innerHTML = "error: "+[error];
+     }
+
 
 
 
