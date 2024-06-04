@@ -1,0 +1,35 @@
+body {
+    font-family: cursive;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.boton {
+    font-size: 1em;
+    padding: 10px;
+    font-family: cursive;
+}
+
+
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+#females {
+    background-color: lightpink;
+    width: 130px;
+    padding: 20px;
+}
+
+#males {
+    background-color: lightblue;
+    width: 130px;
+    padding: 20px;
+    margin-left: 20px;
+
+}
